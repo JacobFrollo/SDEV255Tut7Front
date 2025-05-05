@@ -4,7 +4,7 @@ addEventListener("DOMContentLoaded", async function () {
 })
 
 async function getAllSongs() {
-    const response = await fetch("localhost:300/api/songs")
+    const response = await fetch("https://flaxen-regular-countess.glitch.me/api/songs")
     if (response.ok) {
         const songs = await response.json()
         let html = ""
@@ -17,7 +17,7 @@ async function getAllSongs() {
 
 async function deleteSong() {
     const songID = document.querySelector("#songDropDown option:ckecked").value
-    const response = await fetch("localhost:300/api/songs" + songID, {
+    const response = await fetch("https://flaxen-regular-countess.glitch.me/api/songs" + songID, {
         method: "DELETE"
     })
     if (response.ok) {
