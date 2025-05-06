@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Song Front End</title>
-    <script src="scripts/script.js"></script>
-    <script defer src="scripts/auth.js"></script>
-    <script defer scr="scripts/init.js"></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <nav>
-        <a href="index.html">All Songs</a>
-        <a href="add_song.html">Add songs</a>
-        <a href="delete.html">Delete Songs</a>
-        <button id="logout" style="float: right">Logout</button>
+        <a href="/index.html">All Songs</a>
+        <a href="/add_song.html">Add Song</a>
+        <a href="/delete.html">Delete Song</a>
+        <a href="" id="loginlink">Login</a>
+        <a href="/signup.html">Signup</a>
     </nav>
-    <h1>Songs</h1>
+    <h1>All Songs</h1>
     <ul>
         <div id="list_of_songs"></div>
     </ul>
