@@ -23,7 +23,7 @@ async function signup(username, password) {
  
     if (response.ok) {
         alert("Sign up complete")
-        window.location.href = "/index.html"
+        window.location.href = "index.html"
      
     }
     else {
